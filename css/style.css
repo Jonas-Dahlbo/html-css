@@ -20,9 +20,26 @@ header .container .menu-bars {
 }
 header .container .menu {
   display: none;
+  flex: 1;
 }
 @media (min-width: 992px) {
   header .container .menu {
     display: block;
   }
+}
+header .container .top-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DAD9D3;
+}
+header .container .top-menu .contact-info {
+  display: flex;
+}
+header .container .top-menu .contact-info .contact-box {
+  margin-right: 20px;
+  border-right: 1px solid #DAD9D3;
+  padding-right: 20px;
+}
+header .container .top-menu .contact-info .contact-box.last {
+  border: none;
 }/*# sourceMappingURL=style.css.map */

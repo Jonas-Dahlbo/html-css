@@ -57,14 +57,24 @@ header .container .menu {
 }
 header .container .top-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid #DAD9D3;
   padding-bottom: 8px;
 }
+@media (min-width: 1200px) {
+  header .container .top-menu {
+    justify-content: space-between;
+  }
+}
 header .container .top-menu .contact-info {
-  display: flex;
+  display: none;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .top-menu .contact-info {
+    display: flex;
+  }
 }
 header .container .top-menu .contact-info .contact-box {
   margin-right: 20px;
@@ -88,7 +98,7 @@ header .container .top-menu .social-media a {
   margin-left: 12px;
 }
 header .container .top-menu .social-media a:hover {
-  color: #666666;
+  color: #7c7c7c;
 }
 header .container .main-menu {
   display: flex;

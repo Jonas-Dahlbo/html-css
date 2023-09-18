@@ -60,14 +60,21 @@ header {
 
         .top-menu {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             border-bottom: 1px solid #DAD9D3;
             padding-bottom: 8px;
 
+            @media (min-width: 1200px) {
+                justify-content: space-between;
+            }
             .contact-info {
-                display: flex;
+                display: none;
                 align-items: center;
+
+                @media (min-width: 1200px) {
+                    display: flex;
+                }
 
                 .contact-box {
                     margin-right: 20px;
@@ -96,7 +103,7 @@ header {
                     margin-left: 12px;
 
                     &:hover {
-                        color: #666666;
+                        color: #7c7c7c;
                     }
                 }
             }

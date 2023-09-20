@@ -60,7 +60,7 @@ header {
 
         .top-menu {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #DAD9D3;
             padding-bottom: 8px;
@@ -69,11 +69,11 @@ header {
                 justify-content: space-between;
             }
             .contact-info {
-                display: none;
+                display: flex;
                 align-items: center;
 
-                @media (min-width: 1200px) {
-                    display: flex;
+                @media (max-width: 992px) {
+                    display: none;
                 }
 
                 .contact-box {
@@ -92,6 +92,10 @@ header {
 
                     &.last {
                         border: none;
+
+                        @media (max-width: 1200px) {
+                            display: none;
+                        }
                     }
                 }
             }

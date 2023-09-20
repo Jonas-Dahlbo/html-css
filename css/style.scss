@@ -171,23 +171,47 @@ header {
         align-items: center;
 
         .content {
+            padding: 60px;
+            text-align: center;
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
 
             h1 {
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
-                font-size: 86px;
+                font-size: 40px;
+
+                @media (min-width: 768px) {
+                    font-size: 70px;
+                }
+                @media (min-width: 992px) {
+                    font-size: 50px;
+                }
+                @media (min-width: 1200px) {
+                    font-size: 86px;
+                }
             }
 
             p {
-                font-size: 20px;
+                font-size: 16px;
                 padding-top: 30px;
                 padding-bottom: 35px;
+
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                }
             }
 
             a {
-                margin-right: 10px;
-                padding-top: 15px;
-                padding-bottom: 15px;
+                display: block;
+                margin-bottom: 10px;
+
+                @media (min-width: 768px) {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
             }
         }
 

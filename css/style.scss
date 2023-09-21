@@ -8,6 +8,19 @@ html,body {
     font-weight: 400;
 }
 
+.wrapper-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-yellow {
     background-color: #F9D783;
     border: 1px solid #F9D783;
@@ -49,6 +62,28 @@ html,body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
+    }
+}
+
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #191919;
+        color: #191919;
     }
 }
 
@@ -275,7 +310,13 @@ header {
 
             }
 
-            article {
+            .project {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
+
                 img {
                     width: 100%;
                     height: auto;
@@ -287,10 +328,10 @@ header {
                     font-size: 22px;
                     padding-top: 35px;
                     padding-bottom: 16px;
-                    border-bottom: 1px solid #dad9d3
+                    border-bottom: 1px solid #dad9d3;
                 }
                 
-                a {
+                .read-more {
                     padding: 15px;
                     display: block;
                     text-align: right;
@@ -304,6 +345,19 @@ header {
                         margin-left: 5px;
                     }
                 }
+
+                &:hover .read-more {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .center-content {
+            margin-top: 50px;
+            margin-bottom: 60px;
+
+            @media (min-width: 1200px) {
+                margin-bottom: 90px;
             }
         }
     }

@@ -52,6 +52,33 @@ html,body {
     }
 }
 
+.section-title {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    
+    @media (min-width: 992px){
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    @media (min-width:1200px) {
+        padding-top: 110px;
+        padding-bottom: 90px;
+    }
+
+    p {
+        color: #F94D1C;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        color: #191919;
+        font-family: 'DM sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
+
 header {
     background-color: #F0EFE9;
     padding: 16px;
@@ -226,6 +253,57 @@ header {
 
             @media (min-width: 1200px) {
                 width: 100%;
+            }
+        }
+    }
+}
+
+.project-and-case {
+    .container {
+
+        .section-title {
+            text-align: center;
+        }
+
+        .project-and-cases {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            article {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #dad9d3
+                }
+                
+                a {
+                    padding: 15px;
+                    display: block;
+                    text-align: right;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #191919;
+
+                    i {
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

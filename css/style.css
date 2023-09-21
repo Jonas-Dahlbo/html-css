@@ -47,6 +47,33 @@ html, body {
   color: #F0EFE9;
 }
 
+.section-title {
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+@media (min-width: 992px) {
+  .section-title {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title {
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+}
+.section-title p {
+  color: #F94D1C;
+  margin-bottom: 5px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -215,4 +242,43 @@ header .container .main-menu nav a:hover {
   .showcase .container img {
     width: 100%;
   }
+}
+
+.project-and-case .container .section-title {
+  text-align: center;
+}
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.project-and-case .container .project-and-cases article img {
+  width: 100%;
+  height: auto;
+}
+.project-and-case .container .project-and-cases article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dad9d3;
+}
+.project-and-case .container .project-and-cases article a {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 14;
+  font-weight: 500;
+  text-decoration: none;
+  color: #191919;
+}
+.project-and-case .container .project-and-cases article a i {
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -409,23 +409,29 @@ header {
 
 .newsletter {
     background-color: #F0EFE9;
+    display: flex;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        justify-content: center;
         align-items: center;
         padding-top: 120px;
         padding-bottom: 110px;
+
+        @media (min-width: 992px){
+            display: flex;
+            justify-content: space-between;
+        }
         
         h2 {
+            text-align: center;
             color: #191919;
             font-family: 'DM sans', sans-serif;
             font-weight: 700;
-            font-size: 45px;
+            font-size: 30px;
         }
-
+        
         #email {
-            display: block;
             color: #8C8C8C;
             font-family: 'Inter', sans-serif;
             font-size: 16;
@@ -435,10 +441,16 @@ header {
             padding: 12px 25px 11px;
             border-radius: 25px;
             border: none;
+        }
+    }
 
-            @media(min-width: 992px) {
-                display: flex;
-            }
+    img{
+        display: none;
+
+        @media(min-width: 992px) {
+            display: flex;
+            margin-top: 80px;
+            margin-right: 0;
         }
     }
 }

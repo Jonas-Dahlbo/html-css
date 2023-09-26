@@ -378,22 +378,29 @@ header .container .main-menu nav a:hover {
 
 .newsletter {
   background-color: #F0EFE9;
+  display: flex;
 }
 .newsletter .container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  justify-content: center;
   align-items: center;
   padding-top: 120px;
   padding-bottom: 110px;
 }
+@media (min-width: 992px) {
+  .newsletter .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .newsletter .container h2 {
+  text-align: center;
   color: #191919;
   font-family: "DM sans", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
 }
 .newsletter .container #email {
-  display: block;
   color: #8C8C8C;
   font-family: "Inter", sans-serif;
   font-size: 16;
@@ -404,8 +411,13 @@ header .container .main-menu nav a:hover {
   border-radius: 25px;
   border: none;
 }
+.newsletter img {
+  display: none;
+}
 @media (min-width: 992px) {
-  .newsletter .container #email {
+  .newsletter img {
     display: flex;
+    margin-top: 80px;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */

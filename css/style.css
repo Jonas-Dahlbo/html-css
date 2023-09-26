@@ -391,4 +391,21 @@ header .container .main-menu nav a:hover {
   font-family: "DM sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
+}
+.newsletter .container #email {
+  display: block;
+  color: #8C8C8C;
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  padding: 12px 25px 11px;
+  border-radius: 25px;
+  border: none;
+}
+@media (min-width: 992px) {
+  .newsletter .container #email {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -269,11 +269,52 @@ header .container .main-menu nav a:hover {
   .showcase .container img {
     display: block;
     width: 75%;
+    height: auto;
   }
 }
 @media (min-width: 1200px) {
   .showcase .container img {
+    display: block;
     width: 100%;
+    height: auto;
+  }
+}
+
+.partners {
+  background-color: #FFFFFF;
+}
+.partners .container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .partners .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .partners .container img {
+    width: 75%;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .partners .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  .partners .container img {
+    width: 100%;
+    height: auto;
   }
 }
 

@@ -374,4 +374,21 @@ header .container .main-menu nav a:hover {
   .project-and-case .container .center-content {
     margin-bottom: 90px;
   }
+}
+
+.newsletter {
+  background-color: #F0EFE9;
+}
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 110px;
+}
+.newsletter .container h2 {
+  color: #191919;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }/*# sourceMappingURL=style.css.map */

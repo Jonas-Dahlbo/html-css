@@ -410,6 +410,24 @@ header {
 .newsletter {
     background-color: #F0EFE9;
     display: flex;
+    position: relative;
+
+    .curvy-line{
+        position: absolute;
+        display: flex;
+        bottom: 65px;
+        right: 0;
+
+        @media (min-width:992px) {
+            bottom: 10px;
+        }
+
+        @media (min-width: 1600px) {
+            display: flex;
+            bottom: 65px;
+            right: 0;
+        }
+    }
 
     .container {
         display: block;
@@ -431,7 +449,8 @@ header {
             font-size: 30px;
         }
         
-        #email {
+        form {
+            input {
             color: #8C8C8C;
             font-family: 'Inter', sans-serif;
             font-size: 16;
@@ -441,16 +460,7 @@ header {
             padding: 12px 25px 11px;
             border-radius: 25px;
             border: none;
-        }
-    }
-
-    img{
-        display: none;
-
-        @media(min-width: 992px) {
-            display: flex;
-            margin-top: 80px;
-            margin-right: 0;
+            }
         }
     }
 }

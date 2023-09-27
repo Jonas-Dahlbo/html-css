@@ -287,9 +287,13 @@ header .container .main-menu nav a:hover {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top: 45px;
   padding-bottom: 30px;
+}
+.partners .container img {
+  width: 75%;
+  height: auto;
 }
 @media (min-width: 992px) {
   .partners .container {
@@ -298,10 +302,6 @@ header .container .main-menu nav a:hover {
     align-items: center;
     padding-top: 70px;
     padding-bottom: 70px;
-  }
-  .partners .container img {
-    width: 75%;
-    height: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -316,6 +316,46 @@ header .container .main-menu nav a:hover {
     width: 100%;
     height: auto;
   }
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.features .container .section-title {
+  padding-top: 0px;
+  padding-right: 5px;
+  text-align: left;
+}
+.features .container .section-title p {
+  margin-bottom: 25px;
+}
+.features .container .section-title h2 {
+  margin-bottom: 25px;
+}
+.features .container .section-title a {
+  display: block;
+  text-align: center;
+}
+.features .container .feature-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 140px;
+}
+.features .container .feature-box a {
+  color: #191919;
+  text-decoration: none;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+.features .container .feature-box a img {
+  margin-bottom: 40px;
+}
+.features .container .feature-box a h3 {
+  font-family: "DM sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 25px;
 }
 
 .project-and-case .container .section-title {

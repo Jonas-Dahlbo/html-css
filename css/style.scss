@@ -303,11 +303,14 @@ header {
             display: grid;    
             align-items: center;
             justify-content: center;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             padding-top: 45px;
             padding-bottom: 30px;
             
-            
+            img {
+                width: 75%;
+                height: auto;
+            }
             
             @media (min-width: 992px) {
                 display: flex;
@@ -315,11 +318,6 @@ header {
                 align-items: center;
                 padding-top: 70px;
                 padding-bottom: 70px;
-                
-                img {
-                    width: 75%;
-                    height: auto;
-                }
             }
     
             @media (min-width: 1200px) {
@@ -337,6 +335,56 @@ header {
     }
 }
 
+.features {
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .section-title {
+            padding-top: 0px;
+            padding-right: 5px;
+            text-align: left;
+
+            p {
+                margin-bottom: 25px;
+            }
+
+            h2 {
+                margin-bottom: 25px;
+            }
+            
+            a {
+                display: block;
+                text-align: center;
+            }
+        }
+        
+        .feature-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 140px;
+
+            a {
+                color: #191919;
+                text-decoration: none;
+                padding-right: 100px;
+                padding-bottom: 50px;
+                
+                img{
+                    margin-bottom: 40px;
+                }
+
+                h3 {
+                    font-family: 'DM sans', sans-serif;
+                    font-size: 25px;
+                    font-weight: 700;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+}
 .project-and-case {
     .container {
 

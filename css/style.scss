@@ -110,7 +110,11 @@ html,body {
         color: #191919;
         font-family: 'DM sans', sans-serif;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 30px;
+
+        @media (min-width: 768px) {
+            font-size: 45px;
+        }
     }
 }
 
@@ -338,13 +342,24 @@ header {
 .features {
 
     .container{
-        display: grid;
+        display: block;
+        justify-content: center;
+        align-items: center;
         grid-template-columns: 1fr 2fr;
+
+        @media (min-width: 992px) {
+            display: grid;
+            align-items: left;
+        }
 
         .section-title {
             padding-top: 0px;
             padding-right: 5px;
-            text-align: left;
+            text-align: center;
+
+            @media (min-width: 992px) {
+                text-align: left;
+            }
 
             p {
                 margin-bottom: 25px;
@@ -361,9 +376,14 @@ header {
         }
         
         .feature-box {
-            display: grid;
+            display: block;
             grid-template-columns: 1fr 1fr;
-            margin-left: 140px;
+            
+
+            @media (min-width: 992px) {
+                display: grid;
+                margin-left: 140px;
+            }
 
             a {
                 color: #191919;

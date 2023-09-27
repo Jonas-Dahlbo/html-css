@@ -405,6 +405,81 @@ header {
         }
     }
 }
+
+.about-company {
+
+    .container {
+        display: flex;
+
+        .left {
+            
+            .info-box {
+
+                h4 {
+                    font-family: 'DM sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    color: #191919;
+                }
+
+                span {
+                    color: #F94D1C;
+                    font-size: 16px;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    font-style: italic;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .right {
+            margin-bottom: 15px;
+            padding-left: 200px;
+            
+            
+
+            .section-title {
+                display: block;
+                align-items: center;
+                justify-content: center;
+                padding-top: 0;
+                
+                p {
+                    padding-bottom: 35px;
+                }
+
+                h2 {
+                    padding-bottom: 35px;
+                    font-family: 'DM sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 45px;
+                }
+            }
+            
+            .about-btn {
+                align-items: center;
+                justify-content: center;
+                
+                .video-btn {
+                    color: #191919;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16;
+                    font-weight: 600;
+                    text-decoration: none;
+                    margin-left: 20px;
+
+                    img {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
 .project-and-case {
     .container {
 
@@ -514,7 +589,7 @@ header {
             color: #191919;
             font-family: 'DM sans', sans-serif;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 45px;
         }
         
         form {

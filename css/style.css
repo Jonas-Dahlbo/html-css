@@ -381,6 +381,60 @@ header .container .main-menu nav a:hover {
   padding-bottom: 25px;
 }
 
+.about-company .container {
+  display: flex;
+}
+.about-company .container .left .info-box h4 {
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #191919;
+}
+.about-company .container .left .info-box span {
+  color: #F94D1C;
+  font-size: 16px;
+}
+.about-company .container .left .info-box p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+}
+.about-company .container .right {
+  margin-bottom: 15px;
+  padding-left: 200px;
+}
+.about-company .container .right .section-title {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+}
+.about-company .container .right .section-title p {
+  padding-bottom: 35px;
+}
+.about-company .container .right .section-title h2 {
+  padding-bottom: 35px;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.about-company .container .right .about-btn {
+  align-items: center;
+  justify-content: center;
+}
+.about-company .container .right .about-btn .video-btn {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.about-company .container .right .about-btn .video-btn img {
+  margin-right: 12px;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -480,7 +534,7 @@ header .container .main-menu nav a:hover {
   color: #191919;
   font-family: "DM sans", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 45px;
 }
 .newsletter .container form input {
   color: #8C8C8C;
